@@ -1,65 +1,127 @@
-# Phase 1 Project
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
+# Data Analysis and Exploration Project
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
 
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+This a project is meant to test on my understanding of my phase 0 and phase 1. 
+Its helps me know how well i'm conversant with Exploratory Data Analysis which helps me get a better overview on data cleaning which is a handy tool for Data Analyst.
+## Acknowledgements
 
-## Project Overview
+ - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ - [Awesome README](https://github.com/matiassingers/awesome-readme)
+ - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
 
-### Business Problem
+## Run Locally
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+Clone the project
 
-### The Data
+```bash
+  git clone https://github.com/Murithi1/dsc-phase-1-project.git
+```
 
-In the folder `zippedData` are movie datasets from:
+Go to the project directory
 
-* [Box Office Mojo](https://www.boxofficemojo.com/)
-* [IMDB](https://www.imdb.com/)
-* [Rotten Tomatoes](https://www.rottentomatoes.com/)
-* [TheMovieDB](https://www.themoviedb.org/)
-* [The Numbers](https://www.the-numbers.com/)
+```bash
+  cd /c/Users/user/Desktop/MongoDB/sudo/dsc-phase-1-project
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+```
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+Install dependencies
 
-## Deliverables
+```bash
+  npm install
+```
 
-There are three deliverables for this project:
+Start the server
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+```bash
+  npm run start
+```
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
 
-### Key Points
+## Environment Variables
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+To run this project, you will need to add the following environment variables to your .env file
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+- import pandas as pd 
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+- import numpy as np 
 
-## Getting Started
+- import matplotlib.pyplot as plt 
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
+- matplotlib inline 
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
+- import seaborn as sns 
 
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
+Then you load the data using;
 
-## Project Submission and Review
+df = pd.read_csv('imdb.title.ratings.csv.gz')
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
 
-## Summary
+## Used By
 
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+This project is used by the following personnel:
+
+- Microsoft company to help them make informed judgement in creating there new movies office. 
+- Moringa School TM to help them gauge my understanding on the skills required in the Analytics world.
+- Moringa School student to help me edge my skills on README creation and other Analysis skills.
+
+
+## Optimizations
+
+- I managed to optimize my skills that i had acquired in my prevoius phases to put them into real case scenario of analytics, which made me better understand some of the areas that i had not taken keen observation on.
+
+
+
+## Lessons Learned
+
+What did you learn while building this project? What challenges did you face and how did you overcome them?
+
+
+## Contributing
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
+
+## Deployment
+
+To deploy this project run
+
+```bash
+https://github.com/Murithi1/dsc-phase-1-project.git
+```
+
+
+# Hi, I'm Kennedy! 👋
+
+
+## 🚀 About Me
+I'm a Data Analyst to be...
+
+
+## FAQ
+
+#### Question 1
+How can we best analyze and clean a given set of data acquired from a certain dataset?
+
+Answer 1
+We can use Pandas which is a Python library which can really help us do the magic in cleaning and analysing our data.
+#### Question 2
+How best can we do data visualisation on a set of data given?
+
+Answer 2
+We can use Data Visualisation tools such as Matplolib and Seaborn to help us in drawing of visualization graphs which can really help a great deal in seeing how the data varies with different visualization tools. 
+
+## Appendix
+
+- Conclusion
+It's evident from our visualization that movies that had a lower average rating of below 5 had a bigger audience than those that had higher ratings.
+
+Also if you would compare the number of votes with the average rating it gives a NO Correration. Meaning that there was no concrete relationship between the average rating and the number of votes
+
+- Recommendation
+It can be recommendend from our analysis that when choosing a movie type to dwell on, it would be adviserable if one didn't consider on obtaining a high rating and rather dwell on coming up with a script that best entertains the majority of the people without having a lot of complexities for the viewers to unpack on.
